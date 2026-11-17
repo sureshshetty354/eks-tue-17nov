@@ -6,7 +6,7 @@ resource "aws_eks_node_group" "worker" {
 
   subnet_ids = module.vpc.public_subnets
 
-  instance_types = ["t3.medium"]
+  instance_types = ["t3.small"]
 
   scaling_config {
     desired_size = 1
